@@ -1,0 +1,18 @@
+{
+  "name": "advent-of-code-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel-node": "babel-node --max-old-space-size=4076 --extensions=.js,.jsx,.ts,.tsx"
+  },
+  "author": "Griffin Telljohann",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.0",
+    "babel-plugin-module-resolver": "^4.1.0"
+  }
+}
