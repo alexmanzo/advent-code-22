@@ -6,7 +6,7 @@
   "scripts": {
     "babel-node": "babel-node --max-old-space-size=4076 --extensions=.js,.jsx,.ts,.tsx",
     "init": "npm run babel-node utils/cmd.js init",
-    "solve": ""
+    "solve": "npm run babel-node utils/cmd.js solve"
   },
   "engines": {
     "node": "14.15.1"

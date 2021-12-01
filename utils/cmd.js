@@ -1,6 +1,7 @@
 import { readFile, writeFile } from 'fs/promises'
 import { join } from 'path'
 
+
 const commands = {
     init: async (problem) => {
         await writeFile(join(__dirname, `../data/${problem}.txt`), '')
@@ -19,6 +20,23 @@ Write solutions to parts 1 and 2 in ./solutions/${problem}.js
 Run solutions with \`npm run solve ${problem}\``)
     },
     solve: (problem) => {
+        const solutionFile = require(`../solutions/${problem}`)
+
+        console.log('Attempting Part 1')
+        try {
+            const solution1 = solutionFile.part1()
+            console.log(`Problem 1 Solution: ${solution1}`)
+        } catch(err) {
+            console.log('Error in part 1: ', err)
+        }
+
+        console.log('Attempting Part 2')
+        try {
+            const solution2 = solutionFile.part2()
+            console.log(`Problem 2 Solution: ${solution2}`)
+        } catch(err) {
+            console.log('Error in part 2: ', err)
+        }
 
     }
 }
