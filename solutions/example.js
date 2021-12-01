@@ -1,8 +1,6 @@
 import { loadDataArray } from '../utils/data'
 
-function examplePart1() {
+export function part1() {
     const data = loadDataArray('example')
     return data
 }
-
-console.log(examplePart1())

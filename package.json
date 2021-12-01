@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "babel-node": "babel-node --max-old-space-size=4076 --extensions=.js,.jsx,.ts,.tsx"
+    "babel-node": "babel-node --max-old-space-size=4076 --extensions=.js,.jsx,.ts,.tsx",
+    "init": "npm run babel-node utils/cmd.js init",
+    "solve": ""
+  },
+  "engines": {
+    "node": "14.15.1"
   },
   "author": "Griffin Telljohann",
   "license": "ISC",
